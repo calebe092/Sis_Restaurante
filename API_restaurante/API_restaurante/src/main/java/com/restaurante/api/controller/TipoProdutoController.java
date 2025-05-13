@@ -55,11 +55,7 @@ public class TipoProdutoController {
 
         return ResponseEntity.ok(tipoProdutoAtulizado);
 
-
     }
-
-
-
 
     @DeleteMapping("/{idTipoProduto}")
     public ResponseEntity<Void> remover(@PathVariable Long idTipoProduto) {

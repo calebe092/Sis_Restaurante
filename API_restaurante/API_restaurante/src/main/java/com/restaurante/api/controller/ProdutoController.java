@@ -4,7 +4,7 @@ package com.restaurante.api.controller;
 import com.restaurante.handler.NegocioExeption;
 import com.restaurante.model.Produto;
 import com.restaurante.repository.ProdutoRepository;
-import com.restaurante.service.ProdutoService;
+import com.restaurante.service.RegistroProdutoService;
 import jakarta.validation.Valid;
 import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +22,7 @@ public class ProdutoController {
     private ProdutoRepository produtoRepository;
 
 
-    private final ProdutoService produtoService;
+    private final RegistroProdutoService produtoService;
 
     @GetMapping
     public List<Produto> ProdutoListar() {

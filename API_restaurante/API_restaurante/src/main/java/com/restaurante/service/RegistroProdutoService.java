@@ -9,7 +9,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Service
 @AllArgsConstructor
-public class ProdutoService {
+public class RegistroProdutoService {
 
     @Autowired
     private ProdutoRepository produtoRepository;

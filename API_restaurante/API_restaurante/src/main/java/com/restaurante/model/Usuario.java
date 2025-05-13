@@ -4,6 +4,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.Id;
+import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
@@ -18,7 +19,6 @@ public class Usuario {
     @Getter
     @Setter
     @Id
-    @NotBlank
     @Column(name = "id", nullable = true)
     public Long id ;
 
@@ -28,6 +28,7 @@ public class Usuario {
     @Column(name = "name", nullable = true,unique = true)
     public String nome;
 
+    @Email
     @Getter
     @Setter
     @Column(name = "e_mail", nullable = true,unique = true)
